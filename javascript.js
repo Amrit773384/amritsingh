@@ -18,13 +18,7 @@ function sleep(milliseconds) {
 //     console.log("done transisioned on progressbbar")
 // })
 
-
-
-
-setTimeout(function() {
-    while(document.readyState!="complete"){
-        sleep(100);
-    }
-    var loader = document.getElementById('loadinggif');
-    loader.style.display= "none";
-  }, 3000);
+window.onload = function(){
+    var loading = document.getElementById("loadinggif");
+    loading.style.display = "none";
+}
