@@ -14,7 +14,6 @@
 </head>
 
 
-
 <body>
     <div id="loadinggif"></div>
     <header>
@@ -31,10 +30,10 @@
 
 
 </body>
+
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 <script src="data/jquery.ripples-min.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3-4-1.min.js"></script> -->
 <script>
     $(document).ready(function () {
         document.getElementById("loadinggif").style.display = "none";
@@ -51,20 +50,20 @@
         var hour = currentdate.getHours();
         var minute = currentdate.getMinutes();
         var second = currentdate.getSeconds();
-        if (hour>=13){
+        if (hour >= 13) {
             hour = hour - 12;
         }
-        if(hour<10){
-            hour = "0"+parseInt(hour);
+        if (hour < 10) {
+            hour = "0" + parseInt(hour);
         }
-        if(minute<10){
-            minute = "0"+parseInt(minute);
+        if (minute < 10) {
+            minute = "0" + parseInt(minute);
         }
-        if(second<10){
-            second = "0"+parseInt(second);
+        if (second < 10) {
+            second = "0" + parseInt(second);
         }
         console.log(hour, minute, second)
-        clock.innerHTML = hour + " : "+ minute + " : "+second;
+        clock.innerHTML = hour + " : " + minute + " : " + second;
         setTimeout(myClock, 1000);
     }
     myClock();
