@@ -1,7 +1,7 @@
 function sleep(milliseconds) {
     var start = new Date().getTime();
     for (var i = 0; i < 1e7; i++) {
-        if ((new Date().getTime() - start) > milliseconds){
+        if ((new Date().getTime() - start) > milliseconds) {
             break;
         }
     }
@@ -18,7 +18,11 @@ function sleep(milliseconds) {
 //     console.log("done transisioned on progressbbar")
 // })
 
-window.onload = function(){
-    var loading = document.getElementById("loadinggif");
-    loading.style.display = "none";
-}
+// $(document).ready(function(){
+//     document.getElementById("loadinggif").style.display = "none";
+//     $('#headerdiv').ripples({
+//         dropRadius:20,
+//         pertubance:0.03,
+//     })
+
+// })
