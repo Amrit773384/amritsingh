@@ -5,7 +5,7 @@ function sleep(milliseconds) {
             break;
         }
     }
-}
+};
 // var progressbar = document.getElementById("progressbar")
 // progressbar.addEventListener("animationend",function(){
 //     while(document.readyState!="complete"){
@@ -26,3 +26,13 @@ function sleep(milliseconds) {
 //     })
 
 // })
+function hideNav(){
+    document.getElementById("small-nav1").classList.add("hide-nav")
+}
+
+function showNav(){
+    document.getElementById("small-nav1").classList.remove("hide-nav")
+}
+
+
+

@@ -7,44 +7,92 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title style="font-family: sans-serif;">amritSingh</title>
     <link rel="icon" href="data/icon.svg">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Bevan" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bevan">
 
 </head>
 
 
-<body>
-    <div id="loadinggif"></div>
-    <header>
-        <nav class="navbar">
-            <div id="clock" style="color:white;">00 : 00 : 00</div>
-            <ul>
-                <li class="hovereffect">Home</li>
-                <li class="hovereffect">About</li>
-                <li class="hovereffect">Projects</li>
-                <li class="hovereffect">Contact</li>
-            </ul>
-        </nav>
-    </header>
+<div id="loadinggif"></div>
+<div id="small-nav1" class="hide-nav small-nav">
+    <li onclick="hideNav()" class="navbutton" style="text-align: right;margin-right: 10vh;">X</li>
+    <li class="navbutton">Home</li>
+    <li class="navbutton">About</li>
+    <li class="navbutton">Projects</li>
+    <li class="navbutton">Contact</li>
+</div>
+<header>
+    <nav>
+        <div id="clock">00 : 00 : 00</div>
+
+        <ul class="nav-links">
+            <li class="navbutton">Home</li>
+            <li class="navbutton">About</li>
+            <li class="navbutton">Projects</li>
+            <li class="navbutton">Contact</li>
+        </ul>
+
+        <div class="options" onclick="showNav()">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+
+    </nav>
+    <div style="display: flex;width: 80%;margin-top: 10vh;justify-content: space-evenly;" class="responsive-column">
+        <div id="prophilepicdiv">
+            <!-- <object data="data/wing.svg" type="image/svg+xml"></object> -->
+        </div>
+        <div class="commands">
+            <div class="command" style="font-size: medium;">
+                <div>dev@kali:~$  &nbsp; &nbsp;  whoami</div>
+                <div class="animate-name">amritsingh</div>
+            </div>
+
+            <div class="command" style="font-size: medium;">
+                <div>dev@kali:~$ &nbsp; &nbsp;   sudo lshw -short</div>
+                <div class="animate-info">Passionate Full Stack Web Developer</div>
+            </div>
+
+
+        </div>
+    </div>
+    </div>
+</header>
+
+
+<body class="bubble-animation">
 
 
 </body>
+
+
+<foooter>
+    <div class="fdiv">
+    </div>
+</foooter>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 <script src="data/jquery.ripples-min.js"></script>
 <script>
-    $(document).ready(function () {
-        document.getElementById("loadinggif").style.display = "none";
-        $('header').ripples({
-            resolution: 500,
+    jQuery(window).on("load", function () {
+        // document.getElementById("loadinggif").style.display = "none";
+        document.getElementById("loadinggif").classList.add("invisibleme");
+        document.getElementById("loadinggif").addEventListener("animationend", function () {
+            document.getElementById("loadinggif").classList.add("hidden");
+        });
+        console.log("document ready.")
+        jQuery('header').ripples({
+            // resolution: 500,
             dropRadius: 10,
             perturbance: 0.01,
         });
     })
     function myClock() {
-        console.log("working")
         var clock = document.getElementById("clock");
         var currentdate = new Date();
         var hour = currentdate.getHours();
@@ -62,11 +110,13 @@
         if (second < 10) {
             second = "0" + parseInt(second);
         }
-        console.log(hour, minute, second)
         clock.innerHTML = hour + " : " + minute + " : " + second;
         setTimeout(myClock, 1000);
     }
     myClock();
+
 </script>
+
+<script src="javascript.js"></script>
 
 </html>
