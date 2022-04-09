@@ -18,21 +18,23 @@
 
 <div id="loadinggif"></div>
 <div id="small-nav1" class="hide-nav small-nav">
-    <li onclick="hideNav()" class="navbutton" style="text-align: right;margin-right: 10vh;">X</li>
+    <li onclick="hideNav()" class="navbutton" style="text-align: right;padding:3vh;height: 4vh;width:70%;">X</li>
     <li class="navbutton">Home</li>
     <li class="navbutton">About</li>
     <li class="navbutton">Projects</li>
     <li class="navbutton">Contact</li>
 </div>
 <header>
-    <nav>
-        <div id="clock">00 : 00 : 00</div>
-
-        <ul class="nav-links">
+    <nav><a href="https://github.com/Amrit773384">
+        <div class="clock">
+        </div></a>
+        <div style="width: 10vh;"></div>
+        <ul class="nav-links" style="height: 100%">
             <li class="navbutton">Home</li>
             <li class="navbutton">About</li>
             <li class="navbutton">Projects</li>
             <li class="navbutton">Contact</li>
+            <li class="navbutton">More</li>
         </ul>
 
         <div class="options" onclick="showNav()">
@@ -42,6 +44,7 @@
         </div>
 
     </nav>
+
     <div style="display: flex;width: 80%;margin-top: 10vh;justify-content: space-evenly;" class="responsive-column">
         <div id="prophilepicdiv">
             <!-- <object data="data/wing.svg" type="image/svg+xml"></object> -->
@@ -66,14 +69,14 @@
 
 <body class="bubble-animation">
 
-
+<div style="height: 100px;">this is body bro</div>
 </body>
-
-
-<foooter>
-    <div class="fdiv">
+<footer>
+    <div class="fdiv">am a footer div
     </div>
-</foooter>
+</footer>
+
+
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
@@ -92,28 +95,6 @@
             perturbance: 0.01,
         });
     })
-    function myClock() {
-        var clock = document.getElementById("clock");
-        var currentdate = new Date();
-        var hour = currentdate.getHours();
-        var minute = currentdate.getMinutes();
-        var second = currentdate.getSeconds();
-        if (hour >= 13) {
-            hour = hour - 12;
-        }
-        if (hour < 10) {
-            hour = "0" + parseInt(hour);
-        }
-        if (minute < 10) {
-            minute = "0" + parseInt(minute);
-        }
-        if (second < 10) {
-            second = "0" + parseInt(second);
-        }
-        clock.innerHTML = hour + " : " + minute + " : " + second;
-        setTimeout(myClock, 1000);
-    }
-    myClock();
 
 </script>
 

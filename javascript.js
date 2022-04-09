@@ -33,6 +33,6 @@ function hideNav(){
 function showNav(){
     document.getElementById("small-nav1").classList.remove("hide-nav")
 }
-
-
-
+window.addEventListener("resize",function(){
+    document.title = window.innerWidth+"x"+window.innerHeight;
+})
