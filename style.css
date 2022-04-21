@@ -19,7 +19,7 @@
   background-size: 60vh;
 }
 header {
-  background-image: url(/static/images/bg.png);
+  background-image: url(static/images/bg.png);
   background-attachment: fixed;
   background-position: top;
   display: flex;
@@ -107,7 +107,7 @@ margin-top: 2px;
   display: flex;
   width: 50px;
   height: 50px;
-  background: url(data/git.png) no-repeat;
+  background: url(static/git.png) no-repeat;
   background-size: contain;
   color: rgba(255, 255, 255, 0.766);
   user-select: none;
