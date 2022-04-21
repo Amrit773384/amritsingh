@@ -47,10 +47,9 @@
         </div>
 
     </nav>
-
+<!-- 
     <div style="display: flex;width: 80%;margin-top:20px;justify-content: space-evenly;" class="responsive-column">
         <div id="prophilepicdiv">
-            <!-- <object data="data/wing.svg" type="image/svg+xml"></object> -->
         </div>
         <div class="commands">
             <div class="command" style="font-size: medium;">
@@ -63,24 +62,30 @@
                 <div class="animate-info">Passionate Full Stack Web Developer</div>
             </div>
         </div>
+    </div> -->
+    <div id="prophilepicdiv">
     </div>
+    <div id="name-div">
+        Hello I'm Amrit Singh
+    </div>
+    <div id="tagline">I am a Passionate Web Developer</div>
 </header>
 
-
+<!-- 
 <body class="bubble-animation">
 
     <div style="height: 100px;">this is body bro</div>
-</body>
-<footer>
+</body> -->
+<!-- <footer>
     <div class="fdiv">am a footer div
     </div>
-</footer>
+</footer> -->
 
 
 
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
-<script src="data/jquery.ripples-min.js"></script>
+<script src="static/jquery.ripples-min.js"></script>
 <script>
     jQuery(window).on("load", function () {
         // document.getElementById("loadinggif").style.display = "none";
@@ -90,9 +95,9 @@
         });
         console.log("document ready.")
         jQuery('header').ripples({
-            // resolution: 500,
-            dropRadius: 10,
-            perturbance: 0.01,
+            resolution: 600,
+            dropRadius:10,
+            perturbance: 0.005,
         });
     })
 
