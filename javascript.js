@@ -26,13 +26,13 @@ function sleep(milliseconds) {
 //     })
 
 // })
-function hideNav(){
+function hideNav() {
     document.getElementById("small-nav1").classList.add("hide-nav")
 }
 
-function showNav(){
+function showNav() {
     document.getElementById("small-nav1").classList.remove("hide-nav")
 }
-window.addEventListener("resize",function(){
-    document.title = window.innerWidth+"x"+window.innerHeight;
+window.addEventListener("resize", function () {
+    document.title = window.innerWidth + "x" + window.innerHeight;
 })
