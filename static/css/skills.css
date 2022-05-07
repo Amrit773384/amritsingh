@@ -1,0 +1,34 @@
+.sec-skills{
+    display: flex;
+    border-radius: 10px 10px;
+    height: auto;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 1400px;
+    width: 80%;
+    /* box-shadow: 0 0 10px grey; */
+}
+
+.sec-skills > div {
+    width: auto;
+    height: 500px;
+    box-shadow: 0 0 10px grey;
+    margin: 10px;
+}
+.div-skills{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills-bar-parent{
+    width: 90%;
+}
+.skills-bar-parent > div >div{
+    height: 4px;
+    width: 70%;
+    background-color: blue;
+}
