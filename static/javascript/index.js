@@ -6,26 +6,7 @@ function sleep(milliseconds) {
         }
     }
 };
-// var progressbar = document.getElementById("progressbar")
-// progressbar.addEventListener("animationend",function(){
-//     while(document.readyState!="complete"){
-//         sleep(10);
-//     }
-//     progressbar.style.width = "100%";    
-// })
-// progressbar.addEventListener("transitionend",function(){
-//     progressbar.style.display = "none";
-//     console.log("done transisioned on progressbbar")
-// })
 
-// $(document).ready(function(){
-//     document.getElementById("loadinggif").style.display = "none";
-//     $('#headerdiv').ripples({
-//         dropRadius:20,
-//         pertubance:0.03,
-//     })
-
-// })
 function hideNav() {
     document.getElementById("small-nav1").classList.add("hide-nav")
 }

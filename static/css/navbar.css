@@ -46,12 +46,12 @@ nav a {
     transition-property: all;
     transition-duration: 300ms;
     border-bottom: 2px solid rgba(0, 255, 0, 0);
-    overflow: hidden;
 }
 
 .navbutton:hover {
    border-bottom: 2px solid rgb(241, 62, 62);
-    color: rgb(163, 237, 163);
+   text-shadow: 0 0 1px rgb(84, 84, 84);
+    color: rgb(0, 196, 0);
 }
 
 .cv {
@@ -69,7 +69,6 @@ nav a {
 }
 .cv:hover{
     border-color: azure;
-    text-shadow: 0 0 6px 1px rgba(0, 0, 0, 0.519);
     color: rgb(163, 237, 163);
 }
 
@@ -97,7 +96,7 @@ nav a {
 }
 
 .nav-active {
-    background-color: azure;
+    background:linear-gradient(rgb(239, 239, 239),white,white);
     color: rgb(20, 20, 20);
     height: 50px;
     box-shadow: 0 0 6px 2px grey;
@@ -117,5 +116,5 @@ nav a {
 }
 
 .nav-active li:hover {
-    color: green;
+    color:green;
 }

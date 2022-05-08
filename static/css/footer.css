@@ -1,0 +1,9 @@
+footer{
+    background:linear-gradient(to right,rgb(255, 201, 210),rgb(209, 255, 209));
+    text-align: center;
+    width: 100%;
+    padding:1.5rem;
+    font-size: 1.4rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+}

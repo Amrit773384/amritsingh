@@ -1,14 +1,15 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
   /* z-index: 1; */
 }
 body{
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(238, 238, 238, 0.431);
-
+  background:linear-gradient(to right, rgba(255, 208, 222, 0.4),rgba(204, 246, 255, 0.4));
 }
 a{
   text-decoration: none;
@@ -40,48 +41,14 @@ header {
   justify-content: center;
   width: 100vw;
   height:100vh;
-  overflow: hidden;
+  box-shadow: 0 0 20px  grey;
 }
-
-.fdiv {
-  background-color: aqua;
-  width: 100%;
-}
-
-
-
-/* .clockhitnav {
-  animation: hitnav 4s;
-  
-} */
-
-
 
 .invisibleme {
   animation: invisible;
   animation-duration: 2s;
   animation-fill-mode: forwards;
 }
-
-
-/* .clock {
-  display: flex;
-  width: 50px;
-  height: 50px;
-  background: url(static/images/python.png);
-  background-size: contain;
-  color: rgba(255, 255, 255, 0.766);
-  user-select: none;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  overflow: hidden;
-  cursor: pointer;
-  border-radius: 25px 25px 25px 25px;
-  box-shadow: 0 0 0px 1px rgb(0, 0, 0);
-} */
-
-
 
 .options {
   display: none;
@@ -122,24 +89,6 @@ ul {
   transition-duration: 500ms;
 }
 
-/* #prophilepicdiv::before{
-  content: "";
-  display: block;
-  text-align: center;
-  text-decoration: line-through;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  z-index: 3;
-  transition: 1s all;
-}
-#prophilepicdiv:hover{
-  opacity: 0.2;
-}
-#prophilepicdiv:hover::before {
-
-} */
-
 #name-div{
   margin-top: 24px;
   text-align: center;
@@ -170,7 +119,6 @@ ul {
   
 }
 
-
 .center-div-header {
   display: flex;
   width: 80%;
@@ -194,17 +142,7 @@ ul {
 }
 
 @media screen and (max-width:768px) {
-  /* #clock {
-    margin-left: 24vw;
-  } */
-  
-  
-  .clock {
-    margin: 10px;
-  }
-  
 
-  
   .options {
     cursor: pointer;
     display: block;
@@ -219,26 +157,6 @@ ul {
     display: flex;
     flex-direction: column;
   }
-
-  .animate-name {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .animate-info {
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  .command {
-    font-size: 12px;
-  }
-
-  .commands {
-    padding-left: -10px;
-    width: 100%;
-  }
-
   header {
     height: 750px;
   }

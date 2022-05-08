@@ -8,6 +8,7 @@
     justify-content: space-evenly;
     max-width: 1400px;
     width: 80%;
+    backdrop-filter: blur(1px);
     /* box-shadow: 0 0 10px grey; */
 }
 

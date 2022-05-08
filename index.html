@@ -15,6 +15,11 @@
     <link rel="stylesheet" href="static/css/skills.css">
     <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Bevan">
     <link rel="stylesheet" href="static/css/navbar.css">
+    <link rel="stylesheet" href="static/css/contact.css">
+    <link rel="stylesheet" href="static/css/footer.css">
+    <link rel="stylesheet" href="static/css/bubbles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 </head>
 
 
@@ -30,16 +35,16 @@
     <div class="logo" style="user-select: none;">amritSingh</div>
     <div style="width: 10vh;"></div>
     <ul class="nav-links" style="height: 100%">
-        <li class="navbutton">HOME</li>
-        <li class="navbutton">ABOUT</li>
-        <li class="navbutton">PROJECTS</li>
-        <li class="navbutton">CONTACT</li>
+        <li class="navbutton" onclick="window.scroll({top:0,behavior:'smooth'});">HOME</li>
+        <li class="navbutton" onclick="window.scroll({top:document.documentElement.clientHeight-20,behavior:'smooth'});">ABOUT</li>
+        <li class="navbutton" onclick="window.scroll({top:document.body.scrollHeight - document.getElementById('section-contact').clientHeight -300,behavior:'smooth'});">CONTACT</li>
+        <li class="navbutton" onclick="window.location = 'static/templates/projects.html';">PROJECTS</li>
         <a href="static/cv/20BCS8501_Amrit Singh.pdf" class="cv" title="Download CV" target="_blank">CV</a>
         </a>
     </ul>
 
     <div class="options" onclick="showNav()">
-        <div class="line1"></div>
+        <div class=""></div>
         <div class="line2"></div>
         <div class="line3"></div>
     </div>
@@ -47,6 +52,18 @@
 </nav>
 
 <body>
+    <span class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+    </span>
     <header>
         <div id="prophilepicdiv">
         </div>
@@ -66,15 +83,17 @@
                 <div
                     style="border-bottom:dotted rgba(128, 128, 128, 0.833);height:28%;text-align:left;font-size: var(--h4);font-weight: bold;">
                     Personal Details</div>
-                <div style="display: flex;flex-direction: column;justify-content: space-evenly;height: 72%;">
+                <div
+                    style="display: flex;flex-direction: column;justify-content: space-evenly;height: 72%;font-size: var(--h5);">
                     <pre><b>Languages   : </b>English, Hindi</label></pre>
                     <pre><b>Nationality : </b>Indian</pre>
                     <pre><b>AGE         : </b>21 Year</pre>
                 </div>
             </div>
-            <div id="pd-right">Feeling Technology is Fun
-                <br>
-                <br>
+            <div id="pd-right">I have deep interest in computer technology since my childhood , when i got my pc in
+                2011.
+                <br><br>
+                Thats why i choose computer engineering as my carier
                 I started my carrear at 16 years old developing WebApp for small business on my town. Nowadays I work
                 with Microservices, ESB, System Integrations and DevOps
             </div>
@@ -87,7 +106,8 @@
                 id="c1">
                 <h3>Crash Course On Python</h3>
             </a>
-            <a class="certificate" href="static/certificates/2 Using Python to Interact with the Operating.pdf" target="_"
+            <a class="certificate" href="static/certificates/2 Using Python to Interact with the Operating.pdf"
+                target="_"
                 style="background: url(static/images/2.jpg) no-repeat;background-size: cover;background-position: center;"
                 id="c2">
                 <h3>Using Python to Interact with Operating System</h3>
@@ -96,11 +116,13 @@
                 style="background: url(static/images/3.jpg) no-repeat;background-size: cover;background-position: center;">
                 <h3>Git and GitHub</h3>
             </a>
-            <a id="c4" class="certificate" href="static/certificates/4 Configuration Management and the Cloud.pdf" target="_"
+            <a id="c4" class="certificate" href="static/certificates/4 Configuration Management and the Cloud.pdf"
+                target="_"
                 style="background: url(static/images/4.jpg) no-repeat;background-size: cover;background-position: center;">
                 <h3>Configuration Management and the Cloud</h3>
             </a>
-            <a id="c5" class="certificate" href="static/certificates/5 Troubleshooting and Debugging Techniques.pdf" target="_"
+            <a id="c5" class="certificate" href="static/certificates/5 Troubleshooting and Debugging Techniques.pdf"
+                target="_"
                 style="background: url(static/images/5.jpg) no-repeat;background-size: cover;background-position: center;">
                 <h3>Troubleshooting and Debugging Techniques</h3>
             </a>
@@ -109,11 +131,12 @@
                 <h3>Google IT Automation with Python</h3>
             </a>
         </div>
-        <div class="br"></div>
 
     </section>
+
     <!--aboutends here -->
 
+    <!-- -----skill set starts from herer ------ -->
     <div id="main-line">Skill Set</div>
 
     <section class="sec-skills">
@@ -141,18 +164,38 @@
         <div class="div-tools"></div>
 
     </section>
+    <!-- skill set ends here  -->
 
-    <section class="sec-projects">
+    <!-- contact sention starts here  -->
+    <div id="main-line">Contact Me</div>
+
+    <section class="sec-contact" id="section-contact">
+        <div>
+            <div class="contact1">
+                <div style="margin-top: 10px;font-size:2rem;font-family:'bevan">Ping Me</div>
+                <div class="contact-div2">
+                    <div><img src="static/images/phone.png" alt=""><h2>+91 7973592202</h2></div>
+                    <div><img src="static/images/gmail.png" alt=""><h2>amrit773384@gmail.com</h2></div>
+                    <div><img src="static/images/location.png" alt=""><h2>Punjab, India</h2></div>
+                </div>
+                <div class="social-media">
+                    <a href="https://wa.me/7973592202" target="_next_tab"><img src="static/images/whatsapp.png" alt=""></a>
+                    <a href="https://instagram.com/amritsingg/" target="_next_tab"><img src="static/images/instagram.png" alt=""></a>
+                    <a href="https://twitter.com/amritsingh00001" target="_next_tab"><img src="static/images/twitter.png" alt="" width="40"></a>
+                    <a href="https://github.com/amrit773384/" target="_next_tab"><img src="static/images/git.png" width="40px"></a>
+                </div>
+            </div>
+            <div class="contact2">
+
+            </div>
+        </div>
     </section>
 
 </body>
-<div class="br"></div>
-<footer>
-    <div style="margin-top: 40px;">i am a footer div
-    </div>
+<footer> Copyright &#169; 2022 AmritSingh. All Rights Reserved
+    <br>
+    <p style="color:blue;text-decoration:underline;cursor:pointer;">Legal Disclaimer</p>
 </footer>
-
-
 <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
     crossorigin="anonymous"></script>
 <script src="static/javascript/jquery.ripples-min.js"></script>
@@ -169,6 +212,7 @@
             dropRadius: 12,
             perturbance: 0.0010,
         });
+        console.log();
     })
 </script>
 
