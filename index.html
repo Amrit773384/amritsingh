@@ -18,12 +18,14 @@
     <link rel="stylesheet" href="static/css/contact.css">
     <link rel="stylesheet" href="static/css/footer.css">
     <link rel="stylesheet" href="static/css/bubbles.css">
+    <link rel="stylesheet" href="static/css/responsiveMobile.css">
+    <link rel="stylesheet" href="static/css/responsiveTablet.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
         integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
 </head>
 
 
-<div id="loadinggif"></div>
+<div id="loadinggif"><div class="lds-roller"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div></div>
 <div id="small-nav1" class="hide-nav small-nav">
     <li onclick="hideNav()" class="navbutton" style="text-align: right;padding:3vh;height: 4vh;width:70%;">X</li>
     <li class="navbutton">Home</li>
@@ -172,7 +174,7 @@
     <section class="sec-contact" id="section-contact">
         <div>
             <div class="contact1">
-                <div style="margin-top: 10px;font-size:2rem;font-family:'bevan">Ping Me</div>
+                <div style="margin-top: 10px;font-size:2rem;font-family:'bevan';color:pink;text-shadow:  0 0 1px black, 0 0 2px black, 0 0 3px black , 0 0 4px black,0 0 5px black,0 0 6px black;">Ping Me</div>
                 <div class="contact-div2">
                     <div><img src="static/images/phone.png" alt=""><h2>+91 7973592202</h2></div>
                     <div><img src="static/images/gmail.png" alt=""><h2>amrit773384@gmail.com</h2></div>
@@ -201,7 +203,6 @@
 <script src="static/javascript/jquery.ripples-min.js"></script>
 <script>
     jQuery(window).on("load", function () {
-        // document.getElementById("loadinggif").style.display = "none";
         document.getElementById("loadinggif").classList.add("invisibleme");
         document.getElementById("loadinggif").addEventListener("animationend", function () {
             document.getElementById("loadinggif").classList.add("hidden");
