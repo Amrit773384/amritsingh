@@ -205,7 +205,7 @@
     jQuery(window).on("load", function () {
         document.getElementById("loadinggif").classList.add("invisibleme");
         document.getElementById("loadinggif").addEventListener("animationend", function () {
-            document.getElementById("loadinggif").classList.add("hidden");
+            document.getElementById("loadinggif").style.display = "none";
         });
         console.log("document ready.")
         jQuery('header').ripples({
